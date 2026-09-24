@@ -16,3 +16,8 @@ A versão 1.0 usará HTML, CSS e JavaScript, com pesquisa, filtros e favoritos a
 
 ## Continuidade
 No segundo semestre, a solução evoluirá para Node.js, React, TypeScript, Tailwind CSS e publicação na Vercel.
+
+## Critérios de sucesso
+- Permitir que o usuário encontre informações sobre locais e serviços do campus.
+- Disponibilizar pesquisa e filtros para facilitar a consulta das informações.
+- Permitir que o usuário salve locais ou serviços como favoritos.
