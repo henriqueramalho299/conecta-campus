@@ -1,11 +1,11 @@
 # Conecta Campus
-Projeto Conecta Campus - FIAP.
-## Descrição
-Projeto desenvolvido para a disciplina utilizando Git e GitHub.
-## Versão
-Conecta Campus v0.1
 
-## Versão
-Conecta Campus v0.1
+Guia acadêmico de serviços, ambientes e recursos de acessibilidade.
+
+## Situação do projeto
+Versão inicial em construção durante o primeiro semestre de ADS.
+
+## Autor
+Henrique Ramalho
 
 Repositório acadêmico criado na primeira semana do curso.
