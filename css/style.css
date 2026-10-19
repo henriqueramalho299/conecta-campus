@@ -51,7 +51,13 @@ p { margin: 0 0 1rem; }
 .cabecalho-conteudo { padding-block: 1.25rem; }
 .marca { display: inline-block; color: var(--cor-texto); font-weight: 700; font-size: 1.15rem; text-decoration: none; vertical-align: middle; }
 .marca-simbolo { display: inline-block; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem; border-radius: 0.75rem; background: var(--cor-primaria-escura); color: white; font-size: 0.9rem; line-height: 2.5rem; text-align: center; vertical-align: middle; letter-spacing: -0.1em; }
-.cabecalho nav { margin-top: 1rem; }
+.botao-menu { display: inline-block; max-width: 100%; min-height: 2.75rem; margin-top: 0.75rem; margin-left: 0.75rem; border: 0.0625rem solid var(--cor-borda); border-radius: 0.4rem; padding: 0.55rem 0.7rem; background: var(--cor-superficie); color: var(--cor-texto); font: inherit; font-weight: 700; cursor: pointer; }
+.botao-menu:hover { background: #e8eef8; }
+.icone-menu { margin-left: 0.35rem; }
+.navegacao-principal { display: none; margin-top: 0.75rem; }
+.navegacao-principal.menu-aberto { display: block; }
+.sem-js .navegacao-principal { display: block; }
+.sem-js .botao-menu { display: none; }
 .menu { margin: 0; padding: 0; list-style: none; }
 .menu li { margin-bottom: 0.25rem; }
 .menu a { display: inline-block; padding: 0.5rem 0.25rem; color: var(--cor-secundaria); text-decoration: none; }
@@ -94,7 +100,7 @@ p { margin: 0 0 1rem; }
 label { display: block; margin-bottom: 0.3rem; font-weight: 700; }
 input, select, textarea { width: 100%; border: 0.0625rem solid #8b98a8; border-radius: 0.4rem; padding: 0.7rem; background: var(--cor-superficie); color: var(--cor-texto); font: inherit; }
 textarea { resize: vertical; min-height: 9rem; }
-.mensagem-erro { display: block; color: #a52424; font-size: 0.875rem; }
+.mensagem-erro { display: block; min-height: 1.4rem; color: #a52424; font-size: 0.875rem; }
 .mensagem-erro:not(:empty) { margin-top: 0.35rem; }
 .campo-invalido { border-color: #a52424; border-width: 0.125rem; }
 .mensagem-status:not(:empty) { padding: 1rem; margin-top: 1rem; border-radius: 0.4rem; border-left: 0.25rem solid; }
@@ -107,8 +113,9 @@ textarea { resize: vertical; min-height: 9rem; }
 .integrante dt { font-weight: 700; }
 
 @media (min-width: 48rem) {
-  .cabecalho nav, .menu li { display: inline-block; vertical-align: middle; }
-  .cabecalho nav { margin-top: 0; margin-left: 1.5rem; }
+  .botao-menu { display: none; }
+  .navegacao-principal, .navegacao-principal.menu-aberto { display: block; margin-top: 0; }
+  .menu li { display: inline-block; vertical-align: middle; }
   .menu li { margin-right: 0.25rem; margin-bottom: 0; }
   .cartao { display: inline-block; width: 31%; margin-right: 2%; vertical-align: top; }
   .cartao:nth-child(3n) { margin-right: 0; }

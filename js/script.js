@@ -1,5 +1,20 @@
 "use strict";
 
+const botaoMenu = document.querySelector("#botao-menu");
+const menuPrincipal = document.querySelector("#menu-principal");
+const iconeMenu = document.querySelector(".icone-menu");
+
+if (botaoMenu && menuPrincipal && iconeMenu) {
+  document.documentElement.classList.remove("sem-js");
+
+  botaoMenu.addEventListener("click", () => {
+    const menuEstaAberto = menuPrincipal.classList.toggle("menu-aberto");
+
+    botaoMenu.setAttribute("aria-expanded", String(menuEstaAberto));
+    iconeMenu.textContent = menuEstaAberto ? "✕" : "☰";
+  });
+}
+
 const botaoOrientacao = document.querySelector("#botao-orientacao");
 const painelOrientacao = document.querySelector("#painel-orientacao");
 
