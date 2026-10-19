@@ -1,5 +1,9 @@
+<!--
+INTEGRANTES DO GRUPO
+RM575759-HENRIQUE DOS SANTOS RAMALHO
+-->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="sem-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +20,17 @@
         <span class="marca-simbolo" aria-hidden="true">CC</span>
         Conecta Campus
       </a>
-      <nav aria-label="Navegação principal">
+      <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span>Menu</span>
+        <span class="icone-menu" aria-hidden="true">☰</span>
+      </button>
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
         <ul class="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="locais.html">Locais</a></li>
             <li><a href="detalhes.html" aria-current="page">Acessibilidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
         </ul>
       </nav>
     </div>
@@ -37,6 +47,16 @@
         </div>
         <img src="img/biblioteca-campus.png" alt="Ilustração da biblioteca com estantes de livros, mesas de estudo e corredor central" width="1536" height="1024">
       </header>
+      <section class="bloco-informacao" aria-labelledby="titulo-servicos">
+        <p class="etiqueta">Apoio à vida acadêmica</p>
+        <h2 id="titulo-servicos">Serviços disponíveis</h2>
+        <ul class="lista-recursos">
+          <li>Consulta ao acervo de livros e materiais de referência.</li>
+          <li>Mesas para leitura, estudo individual e desenvolvimento de trabalhos.</li>
+          <li>Espaço para estudo em pequenos grupos.</li>
+          <li>Atendimento no balcão para localizar materiais no acervo.</li>
+        </ul>
+      </section>
       <section class="bloco-informacao" id="recursos-acessibilidade" aria-labelledby="titulo-acessibilidade">
         <p class="etiqueta">Circulação com autonomia</p>
         <h2 id="titulo-acessibilidade">Recursos de acessibilidade</h2>
@@ -60,7 +80,7 @@
   </main>
   <footer class="rodape">
     <div class="container rodape-conteudo">
-      <p>Conecta Campus · versão 0.3 · <span data-ano-atual>2026</span></p>
+      <p>Conecta Campus · versão 0.5 · <span data-ano-atual>2026</span></p>
       <p>Projeto acadêmico · locais e horários ilustrativos.</p>
     </div>
   </footer>

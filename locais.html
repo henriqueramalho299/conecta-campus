@@ -1,5 +1,9 @@
+<!--
+INTEGRANTES DO GRUPO
+RM575759-HENRIQUE DOS SANTOS RAMALHO
+-->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="sem-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +20,17 @@
         <span class="marca-simbolo" aria-hidden="true">CC</span>
         Conecta Campus
       </a>
-      <nav aria-label="Navegação principal">
+      <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span>Menu</span>
+        <span class="icone-menu" aria-hidden="true">☰</span>
+      </button>
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
         <ul class="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="locais.html" aria-current="page">Locais</a></li>
             <li><a href="detalhes.html">Acessibilidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
         </ul>
       </nav>
     </div>
@@ -31,7 +41,7 @@
       <h1>Locais e serviços</h1>
       <p>Espaços de estudo, tecnologia e caminhos para chegar com mais autonomia.</p>
     </header>
-    <div class="grade-locais">
+    <div class="lista-cartoes">
         <article class="cartao" id="biblioteca">
           <img src="img/biblioteca-campus.png" alt="Ilustração da biblioteca com estantes de livros, mesas de estudo e corredor central" width="1536" height="1024" loading="lazy">
           <div class="cartao-conteudo">
@@ -66,7 +76,7 @@
   </main>
   <footer class="rodape">
     <div class="container rodape-conteudo">
-      <p>Conecta Campus · versão 0.3 · <span data-ano-atual>2026</span></p>
+      <p>Conecta Campus · versão 0.5 · <span data-ano-atual>2026</span></p>
       <p>Projeto acadêmico · locais e horários ilustrativos.</p>
     </div>
   </footer>
