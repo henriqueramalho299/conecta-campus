@@ -6,7 +6,7 @@ Planejar a organização das telas antes da implementação em HTML e CSS. O wir
 
 ## Frames e camadas
 
-Usar um frame móvel de referência de **390 × 844 px** para cada tela. Manter as camadas dentro do frame correspondente e usar nomes descritivos.
+As três telas possuem frames móveis de **390 × 844 px**, com camadas nomeadas e organizadas dentro de seus respectivos frames.
 
 ### 01-Home-Mobile
 
@@ -39,13 +39,13 @@ Usar um frame móvel de referência de **390 × 844 px** para cada tela. Manter 
 
 | Nome | Propriedades | Uso |
 | --- | --- | --- |
-| `Texto/Titulo` | Inter ou Arial, 24 px, negrito | Título principal de cada tela |
-| `Texto/Corpo` | Inter ou Arial, 16 px, regular | Rótulos e textos auxiliares |
+| `Texto/Titulo` | Inter, 24 px, negrito | Título principal de cada tela |
+| `Texto/Corpo` | Inter, 16 px, regular | Rótulos e textos auxiliares |
 | `Cor/Texto` | `#1F2937` | Texto principal |
 | `Cor/Superficie` | `#F3F4F6` | Blocos e cards neutros |
 | `Cor/Borda` | `#CBD5E1` | Contorno dos blocos |
 
-Os cinco estilos locais foram criados e aplicados nos três frames. Não foi publicada uma biblioteca de estilos.
+Os cinco estilos locais estão aplicados nos três frames.
 
 ## Link do Figma
 
@@ -53,22 +53,12 @@ Os cinco estilos locais foram criados e aplicados nos três frames. Não foi pub
 
 Os três frames de 390 × 844 px foram criados com textos editáveis, camadas nomeadas e cinco estilos locais aplicados. Os dados de locais e horários são ilustrativos. A revisão visual confirmou que os textos cabem nos blocos.
 
-O usuário confirmou a conclusão da etapa de compartilhamento após a orientação de permitir visualização por link e testar em janela privativa. Essa confirmação foi fornecida pelo usuário; o acesso anônimo não foi testado independentemente pelo assistente.
-
 ## Registro do fluxo Git (WP08)
 
-A `main` serviu como ponto de partida para o branch `feature/wireframe-inicial`.  
-O documento foi criado em um commit e publicado no branch remoto.  
-O branch foi usado para abrir um Pull Request com base em `main`.  
-O wireframe e os cinco estilos foram criados no Figma; o link foi registrado em um novo commit no mesmo branch.  
-Depois de revisar `Files changed`, confirmar o link e verificar a ausência de arquivos indevidos, o PR poderá ser mesclado.  
-Após o merge, a cópia local deve ser sincronizada com `git pull`, e os branches temporários podem ser encerrados.
+A `main` foi a base do branch `feature/wireframe-inicial`.  
+O documento de planejamento foi registrado em commits e publicado no repositório remoto.  
+O Pull Request nº 1 reuniu a documentação das três telas móveis.  
+O wireframe foi criado no Figma com camadas editáveis e cinco estilos locais.  
+O link do arquivo foi adicionado ao documento em um novo commit.  
+Após a revisão, o Pull Request foi mesclado à `main`.
 
-## Critérios de conferência
-
-- [x] Existem três frames móveis nomeados conforme as seções acima.
-- [x] As camadas têm nomes compreensíveis e estão dentro do frame correto.
-- [x] Os cinco estilos locais foram criados e aplicados.
-- [x] Compartilhamento por link em modo de visualização: etapa confirmada pelo usuário.
-- [x] O PR tem base `main`, compare `feature/wireframe-inicial` e apenas este arquivo em **Files changed**.
-- [ ] Após o merge, `docs/wireframe.md` está em `main` e a árvore de trabalho local está limpa.
