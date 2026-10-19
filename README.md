@@ -2,7 +2,7 @@
 
 Guia acadêmico de ambientes, serviços e recursos de acessibilidade do campus.
 
-## Versão 0.4
+## Versão 0.5
 
 O site contém cinco páginas conectadas: início, locais, detalhes da Biblioteca Central, contato e integrantes. A página de detalhes apresenta recursos de acessibilidade e um painel com orientação de chegada. A página de contato permite sugerir novos locais, informar recursos de acessibilidade e corrigir informações do guia. Os locais, trajetos e horários são ilustrativos.
 
@@ -23,7 +23,13 @@ O ponto de entrada é `index.html`, aberto diretamente no navegador. Os arquivos
 | `js/script.js` | Orientação, ano do rodapé e validação do formulário |
 | `img/` | Três ilustrações locais em PNG e fotografia do integrante |
 
-HTML organiza o conteúdo em regiões semânticas, links, listas e imagens com texto alternativo. CSS define a apresentação com fluxo normal, larguras relativas e `inline-block`, sem Flexbox ou Grid. Os cartões ficam empilhados no celular e lado a lado a partir de 48rem. JavaScript registra o clique com `addEventListener` e sincroniza a visibilidade do painel, `aria-expanded` e o texto do botão. Git mantém as etapas de evolução do projeto.
+HTML organiza o conteúdo em regiões semânticas, links, listas e imagens com texto alternativo. CSS define a apresentação com larguras relativas e uma base para telas pequenas. A navegação tem um botão de abertura no celular; a partir de 48rem, o cabeçalho e os links usam Flexbox. As listas de cartões usam Grid, com uma coluna no celular e três colunas em telas maiores. JavaScript registra o clique com `addEventListener` e sincroniza a visibilidade do painel, `aria-expanded` e o texto do botão. Git mantém as etapas de evolução do projeto.
+
+## Navegação e layout
+
+O botão Menu controla a navegação identificada por `menu-principal`. O JavaScript alterna a classe `menu-aberto`, o estado `aria-expanded` e o ícone. A partir de 48rem, a navegação fica visível e o botão é ocultado, independentemente do estado anterior no celular. Sem JavaScript, os links permanecem disponíveis.
+
+O cabeçalho e a lista de links são containers Flexbox em telas maiores. As listas de locais usam a classe `lista-cartoes`, com Grid de uma ou três colunas e espaçamento de 1.25rem. O formulário, as informações do integrante e a orientação de chegada permanecem disponíveis nas cinco páginas.
 
 ## Contato
 
