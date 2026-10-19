@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia acadêmico de ambientes, serviços e recursos de acessibilidade do Conecta Campus.">
+  <title>Conecta Campus | Contato</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#inicio">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Conecta Campus — página inicial">
+        <span class="marca-simbolo" aria-hidden="true">CC</span>
+        Conecta Campus
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="locais.html">Locais</a></li>
+            <li><a href="detalhes.html">Acessibilidade</a></li>
+            <li><a href="contato.html" aria-current="page">Contato</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="inicio" class="container secao" tabindex="-1">
+    <header class="pagina-cabecalho">
+      <p class="etiqueta">Um campus feito com você</p>
+      <h1>Contato e sugestões</h1>
+      <p>Conhece um local que ainda não aparece no guia? Encontrou uma informação desatualizada ou um recurso de acessibilidade? Sua sugestão ajuda a melhorar o Conecta Campus.</p>
+    </header>
+    <section class="bloco-informacao formulario-contato" aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Compartilhe sua sugestão</h2>
+      <p id="aviso-formulario" class="aviso-formulario">Todos os campos são obrigatórios. Nesta versão, os dados são apenas validados no navegador e não são enviados nem armazenados.</p>
+      <noscript><p>A validação do formulário depende de JavaScript. Nenhum dado será enviado.</p></noscript>
+      <form id="formulario-contato" aria-describedby="aviso-formulario" novalidate>
+        <div class="campo-formulario">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" required minlength="3" aria-describedby="erro-nome" aria-invalid="false">
+          <small class="mensagem-erro" id="erro-nome"></small>
+        </div>
+        <div class="campo-formulario">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="erro-email" aria-invalid="false">
+          <small class="mensagem-erro" id="erro-email"></small>
+        </div>
+        <div class="campo-formulario">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto" required aria-describedby="erro-assunto" aria-invalid="false">
+            <option value="">Selecione um assunto</option>
+            <option value="novo-local">Sugestão de local</option>
+            <option value="acessibilidade">Recurso de acessibilidade</option>
+            <option value="correcao">Correção de informação</option>
+          </select>
+          <small class="mensagem-erro" id="erro-assunto"></small>
+        </div>
+        <div class="campo-formulario">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" required minlength="10" aria-describedby="erro-mensagem" aria-invalid="false"></textarea>
+          <small class="mensagem-erro" id="erro-mensagem"></small>
+        </div>
+        <button class="botao" id="botao-validar" type="submit" disabled>Validar sugestão</button>
+        <p class="mensagem-status" id="mensagem-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>Conecta Campus · versão 0.4 · <span data-ano-atual>2026</span></p>
+      <p>Projeto acadêmico · locais e horários ilustrativos.</p>
+    </div>
+  </footer>
+</body>
+</html>
