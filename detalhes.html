@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia acadêmico de ambientes, serviços e recursos de acessibilidade do Conecta Campus.">
+  <title>Conecta Campus | Biblioteca e acessibilidade</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#inicio">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Conecta Campus — página inicial">
+        <span class="marca-simbolo" aria-hidden="true">CC</span>
+        Conecta Campus
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="locais.html">Locais</a></li>
+            <li><a href="detalhes.html" aria-current="page">Acessibilidade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="inicio" tabindex="-1">
+    <article class="detalhe container">
+      <a class="link-voltar" href="locais.html"><span aria-hidden="true">←</span> Voltar para locais</a>
+      <header class="detalhe-cabecalho">
+        <div>
+          <p class="etiqueta">Estudo · Bloco B</p>
+          <h1>Biblioteca Central</h1>
+          <p>Bloco B, térreo · segunda a sexta, das 8h às 21h</p>
+          <p>Um espaço para consultar o acervo, estudar e desenvolver trabalhos acadêmicos, com mesas de uso individual e coletivo.</p>
+        </div>
+        <img src="img/biblioteca-campus.png" alt="Ilustração da biblioteca com estantes de livros, mesas de estudo e corredor central" width="1536" height="1024">
+      </header>
+      <section class="bloco-informacao" id="recursos-acessibilidade" aria-labelledby="titulo-acessibilidade">
+        <p class="etiqueta">Circulação com autonomia</p>
+        <h2 id="titulo-acessibilidade">Recursos de acessibilidade</h2>
+        <ul class="lista-recursos">
+          <li>Acesso ao térreo por rampa com corrimãos no corredor norte.</li>
+          <li>Corredor central livre para circulação entre as estantes.</li>
+          <li>Banheiro acessível próximo à entrada do Bloco B.</li>
+          <li>Elevador para os demais andares do prédio.</li>
+        </ul>
+      </section>
+      <section class="bloco-informacao" id="orientacao-chegada" aria-labelledby="titulo-orientacao">
+        <p class="etiqueta">Planeje seu caminho</p>
+        <h2 id="titulo-orientacao">Como chegar à biblioteca</h2>
+        <p>Veja o percurso a partir da entrada principal do campus.</p>
+        <button class="botao" id="botao-orientacao" type="button" aria-expanded="false" aria-controls="painel-orientacao">Mostrar orientação</button>
+        <div class="orientacao" id="painel-orientacao" hidden>
+          <p>Entre pelo portão principal, siga até o Bloco B e use a rampa do corredor norte. A biblioteca fica no térreo, após a recepção.</p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>Conecta Campus · versão 0.3 · <span data-ano-atual>2026</span></p>
+      <p>Projeto acadêmico · locais e horários ilustrativos.</p>
+    </div>
+  </footer>
+</body>
+</html>
