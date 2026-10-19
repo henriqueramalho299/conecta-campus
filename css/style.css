@@ -113,10 +113,12 @@ textarea { resize: vertical; min-height: 9rem; }
 .integrante dt { font-weight: 700; }
 
 @media (min-width: 48rem) {
+  .cabecalho-conteudo { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
   .botao-menu { display: none; }
   .navegacao-principal, .navegacao-principal.menu-aberto { display: block; margin-top: 0; }
-  .menu li { display: inline-block; vertical-align: middle; }
-  .menu li { margin-right: 0.25rem; margin-bottom: 0; }
+  .navegacao-principal { min-width: 0; }
+  .menu { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+  .menu li { margin-bottom: 0; }
   .cartao { display: inline-block; width: 31%; margin-right: 2%; vertical-align: top; }
   .cartao:nth-child(3n) { margin-right: 0; }
   .detalhe-cabecalho > div, .detalhe-cabecalho > img { display: inline-block; width: 47%; vertical-align: middle; }
