@@ -1,4 +1,9 @@
-/* Henrique dos Santos Ramalho | RM 575759 */
+/*
+INTEGRANTES DO GRUPO
+RM575759-HENRIQUE DOS SANTOS RAMALHO
+*/
+* { box-sizing: border-box; }
+html { font-size: 16px; }
 :root {
   --cor-fundo: #f4f7fb;
   --cor-superficie: #ffffff;
@@ -11,8 +16,6 @@
   --largura-conteudo: 70rem;
 }
 
-* { box-sizing: border-box; }
-html { font-size: 16px; }
 body {
   margin: 0;
   font-size: 1rem;
@@ -64,7 +67,7 @@ p { margin: 0 0 1rem; }
 .menu a[aria-current="page"] { color: var(--cor-primaria); font-weight: 700; text-decoration: underline; }
 .hero { padding-block: 3.5rem; background: #e8eef8; border-bottom: 1px solid var(--cor-borda); }
 .hero-conteudo { max-width: var(--largura-conteudo); }
-.hero h1 { max-width: 48rem; }
+#titulo-principal { max-width: 48rem; }
 .hero-texto { max-width: 38rem; color: var(--cor-secundaria); font-size: 1.125rem; margin-bottom: 1.75rem; }
 .etiqueta, .cartao-tipo { color: var(--cor-destaque); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
 .etiqueta { margin-bottom: 0.5rem; }
