@@ -102,6 +102,7 @@ textarea { resize: vertical; min-height: 9rem; }
 .mensagem-status.erro { background: #fff0ee; color: #a52424; }
 .aviso-formulario { color: var(--cor-secundaria); }
 .integrante { max-width: 42rem; }
+.foto-integrante { width: 100%; max-width: 16rem; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center 35%; border-radius: 0.75rem; margin-bottom: 1.5rem; }
 .integrante dd { margin-left: 0; margin-bottom: 1rem; overflow-wrap: anywhere; }
 .integrante dt { font-weight: 700; }
 

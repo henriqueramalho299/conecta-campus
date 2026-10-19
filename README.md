@@ -21,7 +21,7 @@ O ponto de entrada é `index.html`, aberto diretamente no navegador. Os arquivos
 | `integrantes.html` | Apresentação da equipe do projeto |
 | `css/style.css` | Cores, tipografia, foco e layout responsivo compartilhado |
 | `js/script.js` | Orientação, ano do rodapé e validação do formulário |
-| `img/` | Três ilustrações locais em PNG |
+| `img/` | Três ilustrações locais em PNG e fotografia do integrante |
 
 HTML organiza o conteúdo em regiões semânticas, links, listas e imagens com texto alternativo. CSS define a apresentação com fluxo normal, larguras relativas e `inline-block`, sem Flexbox ou Grid. Os cartões ficam empilhados no celular e lado a lado a partir de 48rem. JavaScript registra o clique com `addEventListener` e sincroniza a visibilidade do painel, `aria-expanded` e o texto do botão. Git mantém as etapas de evolução do projeto.
 
@@ -40,6 +40,7 @@ Ilustrações vetoriais originais do projeto, exportadas para PNG em 1536 × 102
 | `biblioteca-campus.png` | Estantes, mesas de estudo e corredor central | Início, Locais e Detalhes |
 | `laboratorio-informatica.png` | Computadores, bancadas e circulação | Início e Locais |
 | `rota-acessivel.png` | Rampa de entrada com corrimãos | Início e Locais |
+| `henrique-ramalho.jpg` | Fotografia de Henrique dos Santos Ramalho | Integrantes |
 
 ## Planejamento
 
