@@ -73,7 +73,8 @@ p { margin: 0 0 1rem; }
 .secao { padding-block: 3rem; }
 .secao-cabecalho { margin-bottom: 1.5rem; }
 .secao-cabecalho a { display: inline-block; margin-bottom: 1rem; }
-.cartao { display: block; width: 100%; margin-bottom: 1.25rem; overflow: hidden; border: 0.0625rem solid var(--cor-borda); border-radius: 1rem; background: var(--cor-superficie); }
+.lista-cartoes { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+.cartao { display: block; min-width: 0; margin: 0; overflow: hidden; border: 0.0625rem solid var(--cor-borda); border-radius: 1rem; background: var(--cor-superficie); }
 .cartao img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .cartao-conteudo { padding: 1.25rem; }
 .cartao-conteudo h2 { font-size: 1.3rem; margin-top: 0.4rem; }
@@ -119,8 +120,7 @@ textarea { resize: vertical; min-height: 9rem; }
   .navegacao-principal { min-width: 0; }
   .menu { display: flex; flex-wrap: wrap; gap: 0.25rem; }
   .menu li { margin-bottom: 0; }
-  .cartao { display: inline-block; width: 31%; margin-right: 2%; vertical-align: top; }
-  .cartao:nth-child(3n) { margin-right: 0; }
+  .lista-cartoes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .detalhe-cabecalho > div, .detalhe-cabecalho > img { display: inline-block; width: 47%; vertical-align: middle; }
   .detalhe-cabecalho > div { margin-right: 4%; }
   .rodape-conteudo p { display: inline-block; margin-right: 1.5rem; }
