@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia acadêmico de ambientes, serviços e recursos de acessibilidade do Conecta Campus.">
+  <title>Conecta Campus | Locais</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#inicio">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Conecta Campus — página inicial">
+        <span class="marca-simbolo" aria-hidden="true">CC</span>
+        Conecta Campus
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="locais.html" aria-current="page">Locais</a></li>
+            <li><a href="detalhes.html">Acessibilidade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="inicio" class="container secao" tabindex="-1">
+    <header class="pagina-cabecalho">
+      <p class="etiqueta">Explore o campus</p>
+      <h1>Locais e serviços</h1>
+      <p>Espaços de estudo, tecnologia e caminhos para chegar com mais autonomia.</p>
+    </header>
+    <div class="grade-locais">
+        <article class="cartao" id="biblioteca">
+          <img src="img/biblioteca-campus.png" alt="Ilustração da biblioteca com estantes de livros, mesas de estudo e corredor central" width="1536" height="1024" loading="lazy">
+          <div class="cartao-conteudo">
+            <p class="cartao-tipo">Estudo</p>
+            <h2>Biblioteca Central</h2>
+            <p>Bloco B, térreo · 8h às 21h</p>
+            <p>Acervo, mesas de estudo e atendimento para consulta. Acesso pela rampa do corredor norte.</p>
+            <a class="cartao-link" href="detalhes.html">Ver detalhes da biblioteca <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="cartao" id="laboratorio">
+          <img src="img/laboratorio-informatica.png" alt="Ilustração do laboratório com computadores sobre bancadas e espaço de circulação entre as fileiras" width="1536" height="1024" loading="lazy">
+          <div class="cartao-conteudo">
+            <p class="cartao-tipo">Tecnologia</p>
+            <h2>Laboratório de Informática</h2>
+            <p>Bloco C, 1º andar · 8h às 22h</p>
+            <p>Computadores para atividades acadêmicas. Acesso ao andar por elevador.</p>
+            <a class="cartao-link" href="detalhes.html#orientacao-chegada">Ver orientação de chegada ao Bloco B <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="cartao" id="rota-acessivel">
+          <img src="img/rota-acessivel.png" alt="Ilustração de uma rampa de acesso ao campus com corrimãos nas duas laterais" width="1536" height="1024" loading="lazy">
+          <div class="cartao-conteudo">
+            <p class="cartao-tipo">Acessibilidade</p>
+            <h2>Rota acessível</h2>
+            <p>Portão principal → Bloco B</p>
+            <p>Percurso com rampa e corrimãos até a biblioteca, no térreo do Bloco B.</p>
+            <a class="cartao-link" href="detalhes.html#recursos-acessibilidade">Consultar acessibilidade <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+    </div>
+  </main>
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>Conecta Campus · versão 0.3 · <span data-ano-atual>2026</span></p>
+      <p>Projeto acadêmico · locais e horários ilustrativos.</p>
+    </div>
+  </footer>
+</body>
+</html>

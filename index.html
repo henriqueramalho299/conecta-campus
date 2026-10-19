@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia acadêmico de ambientes, serviços e recursos de acessibilidade do Conecta Campus.">
+  <title>Conecta Campus | Início</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#inicio">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Conecta Campus — página inicial">
+        <span class="marca-simbolo" aria-hidden="true">CC</span>
+        Conecta Campus
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+            <li><a href="index.html" aria-current="page">Início</a></li>
+            <li><a href="locais.html">Locais</a></li>
+            <li><a href="detalhes.html">Acessibilidade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="inicio" tabindex="-1">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container hero-conteudo">
+        <p class="etiqueta">Seu campus, mais perto</p>
+        <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+        <p class="hero-texto">Consulte a localização, os horários e os recursos de acessibilidade. Informação para circular com autonomia.</p>
+        <a class="botao" href="locais.html">Explorar locais <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+    <section class="container secao" aria-labelledby="titulo-destaques">
+      <div class="secao-cabecalho">
+        <div>
+          <p class="etiqueta">Comece por aqui</p>
+          <h2 id="titulo-destaques">Conheça o campus</h2>
+        </div>
+        <a href="locais.html">Todos os locais <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="grade-locais">
+        <article class="cartao">
+          <img src="img/biblioteca-campus.png" alt="Ilustração da biblioteca com estantes de livros, mesas de estudo e corredor central" width="1536" height="1024" loading="lazy">
+          <div class="cartao-conteudo">
+            <p class="cartao-tipo">Estudo</p>
+            <h3>Biblioteca Central</h3>
+            <p>Bloco B, térreo · 8h às 21h</p>
+            
+            <a class="cartao-link" href="detalhes.html">Ver detalhes da biblioteca <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="cartao">
+          <img src="img/laboratorio-informatica.png" alt="Ilustração do laboratório com computadores sobre bancadas e espaço de circulação entre as fileiras" width="1536" height="1024" loading="lazy">
+          <div class="cartao-conteudo">
+            <p class="cartao-tipo">Tecnologia</p>
+            <h3>Laboratório de Informática</h3>
+            <p>Bloco C, 1º andar · 8h às 22h</p>
+            
+            <a class="cartao-link" href="locais.html#laboratorio">Consultar o laboratório <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="cartao">
+          <img src="img/rota-acessivel.png" alt="Ilustração de uma rampa de acesso ao campus com corrimãos nas duas laterais" width="1536" height="1024" loading="lazy">
+          <div class="cartao-conteudo">
+            <p class="cartao-tipo">Acessibilidade</p>
+            <h3>Rota acessível</h3>
+            <p>Portão principal → Bloco B</p>
+            
+            <a class="cartao-link" href="detalhes.html#recursos-acessibilidade">Consultar acessibilidade <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>Conecta Campus · versão 0.3 · <span data-ano-atual>2026</span></p>
+      <p>Projeto acadêmico · locais e horários ilustrativos.</p>
+    </div>
+  </footer>
+</body>
+</html>
