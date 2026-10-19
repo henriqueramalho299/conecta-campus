@@ -6,10 +6,6 @@ Guia acadêmico de ambientes, serviços e recursos de acessibilidade do campus.
 
 O site contém cinco páginas conectadas: início, locais, detalhes da Biblioteca Central, contato e integrantes. A página de detalhes apresenta recursos de acessibilidade e um painel com orientação de chegada. A página de contato permite sugerir novos locais, informar recursos de acessibilidade e corrigir informações do guia. Os locais, trajetos e horários são ilustrativos.
 
-## Execução local
-
-O ponto de entrada é `index.html`, aberto diretamente no navegador. Os arquivos HTML, as pastas `css`, `js` e `img` permanecem na mesma estrutura. O site também funciona em um servidor de arquivos estáticos e não depende de instalação de pacotes ou serviços externos.
-
 ## Estrutura e tecnologias
 
 | Arquivo | Responsabilidade |
