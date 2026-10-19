@@ -53,7 +53,7 @@ Os cinco estilos locais foram criados e aplicados nos três frames. Não foi pub
 
 Os três frames de 390 × 844 px foram criados com textos editáveis, camadas nomeadas e cinco estilos locais aplicados. Os dados de locais e horários são ilustrativos. A revisão visual confirmou que os textos cabem nos blocos.
 
-**Pendente:** confirmar em Compartilhar a opção de acesso por link somente para visualização e testar o endereço em janela privativa. O acesso sem autenticação ainda não foi verificado.
+O usuário confirmou a conclusão da etapa de compartilhamento após a orientação de permitir visualização por link e testar em janela privativa. Essa confirmação foi fornecida pelo usuário; o acesso anônimo não foi testado independentemente pelo assistente.
 
 ## Registro do fluxo Git (WP08)
 
@@ -69,6 +69,6 @@ Após o merge, a cópia local deve ser sincronizada com `git pull`, e os branche
 - [x] Existem três frames móveis nomeados conforme as seções acima.
 - [x] As camadas têm nomes compreensíveis e estão dentro do frame correto.
 - [x] Os cinco estilos locais foram criados e aplicados.
-- [ ] O link abre o arquivo inteiro em modo de visualização.
-- [ ] O PR tem base `main`, compare `feature/wireframe-inicial` e apenas este arquivo em **Files changed**.
+- [x] Compartilhamento por link em modo de visualização: etapa confirmada pelo usuário.
+- [x] O PR tem base `main`, compare `feature/wireframe-inicial` e apenas este arquivo em **Files changed**.
 - [ ] Após o merge, `docs/wireframe.md` está em `main` e a árvore de trabalho local está limpa.
