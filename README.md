@@ -47,4 +47,6 @@ Ilustrações vetoriais originais do projeto, exportadas para PNG em 1536 × 102
 [Wireframe v0.2 no Figma](https://www.figma.com/design/ak5VKBMURb6UHHRECvnY1K) · [Documentação das telas](docs/wireframe.md)
 
 ## Autor
-Henrique dos Santos Ramalho · RM 575759
+Henrique dos Santos Ramalho · RM 575759 · Turma 1PDSPA-26
+
+Trabalho individual.
